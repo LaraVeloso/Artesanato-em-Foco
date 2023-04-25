@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #000000;
+    color: #fff;
+}
+.header{
+    width: 100%;
+
+}
+.logo{
+    width: 250px;
+    height: 110px;
+}
+.card{
+    background: #161616;
+    text-align: center;
+}
+.beneficios{
+    background-image: url(src/background-beneficios.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 50px 12%;
+    position: relative;
+    font-size: 22px;
+}
+.linha{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+
+}
+.text-coluna{
+    flex-basis: 50%;
+    margin-bottom: 10px;
+    color: #2a220b;
+}
+.img-colum{
+    flex-basis: 50%;
+    margin-bottom: 10px;
+}
+.img-colum img{
+    display: block;
+    width:90%;
+    margin: auto;
+    height: 85%;
+    width: 85%;
+}
+.beneficios2{
+    background-image: url(src/background-beneficios2.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 50px 12%;
+    position: relative;
+    font-size: 22px;
+}
+.col{
+    margin-bottom: 50px;
+}
+.areapacotes{   
+    color: black;
+    background-image: url(src/background-pacotes.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+.form-row{
+    align-items: center;
+}
+

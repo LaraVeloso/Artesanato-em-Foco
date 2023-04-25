@@ -1,0 +1,227 @@
+/* Abaixo segue a importação de uma fonte para utilizar dentro da página */
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+
+/* abaixo coloquei um asterisco, pois ele seleciona todas as tags do documento HTML criado
+coloquei a margem 0 
+padding de 0, uma pergunta interessante, qual a diferença da margin para o pading,
+a margin é a distancia da tag para a exterior
+o padding é a distancia da tag que você ta usando para o conteudo dela, e tem uma distancia no conteudo principal que deixa ele mais
+"pra dentro" digamos assim.
+e temos o box-sizing 
+e text-decoration para tirar qualquer decoração do texto. */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+/* abaixo foi criado o body, para que nossa fonte tenha um tamanho 100%
+e temos o background em degradê com esse comando linear-gradient*/
+body{
+    font-size: 100%;
+    /*background: linear-gradient(68.15deg, #cc8038 16.62%, #987037 85.61%);*/
+    
+}
+
+.cabecalho {
+    background: whitesmoke;
+    
+}
+
+.conteudo {
+    background-image: url(../Siteprincipal2/img/background-beneficios.jpg);
+}
+
+
+.img {
+    width: 500vh;
+    height: 400px;
+}
+/*abaixo chamei a classe cabecalho do HTML,
+botando o display, flex-direction, align e afins como no style.css da tela de login
+e de novo temos o justify-content: space around que dá distância dos itens acima do conteudo. que é a imagem redonda etc.*/
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+}
+/*Abaixo coloquei o height = altura para 72 pixels*/
+.cabecalho-imagem {
+    height: 40px;
+}
+/*Importante: assim como o cabeçalho é um "elemento pai" para localizar os elementos "filhos", os proprios filhos também podem ser pais
+de outras coisas, exemplo, o nosso menu pode ser uma tag pai para o comunidade do artesanato, sobre nos, contatos e assim por diante.
+ou seja, colocamos o display flex para todos ficarem alinhados e o "gap" em 50px para deixar tudo separado */
+.cabecalho-menu {
+    display: flex;
+    gap: 50px;
+}
+/*Abaixo importei a fonte concert one.
+com a cor branca
+font weight 400 para deixar mais em negrito
+e o fonte-size em 18px.*/
+.cabecalho-menu-item {
+    font-family: 'Concert One', cursive;
+    color: salmon;
+    font-weight: 400;
+    font-size: 18px;
+}
+/*Passamos para o class conteudo que engloba o principal e o secundario.
+criei o border-top que é uma linha no topo como podem ver, e abaixo as definições de cor etc...
+e criei uma margin-bottom pra ter um espaço entre o conteudo.*/
+.conteudo {
+    margin-bottom: 0;
+    border-top: 0.4px solid sandybrown;
+}
+/*Abaixo, segue o conteudo principal.
+display flex e utilizando o 
+flex-direction: row para ficar com linha e horizontal
+isso não é necessario, pois quando você ja joga um flexbox ele ja automaticamente, faz um flex-direction row
+vai na "horizontal".
+o align-items para organizar na forma centralizada.
+justify-content space around para ter um espaço entre a imagem, conteudo e afins.
+Você percebe que nem fiz quase nada e o flexbox fez todo um posicionamento.
+invés de eu ficar 50px, 40px entre os comandos, essa ferramente ja facilita muito.*/
+.conteudo-principal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+/*Aqui ja arrumamos o conteudo principal-escrito que engloba as 3 partes do botão, titulo e subtitulo
+esse "pai" desses "3 filhos"
+e utilizei mais o que? display flex novamente, para posicionar os 3 elementos de uma forma utilizando o flexbox,
+usando o column e o gap.*/
+.conteudo-principal-escrito {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+/*"font-family": define a fonte utilizada para o texto, nesse caso a fonte "Concert One" (um estilo de fonte cursiva).
+"font-weight": define a espessura da fonte, nesse caso um valor de 400 (medium).
+"font-size": define o tamanho da fonte, nesse caso um valor de 64 pixels.
+"color": define a cor do texto, nesse caso um tom de branco (rgb(255, 255, 255)).
+Esses estilos serão aplicados a qualquer elemento HTML que possuir a classe "conteudo-principal-escrito-titulo".*/
+.conteudo-principal-escrito-titulo {
+    font-family: 'Concert One', cursive;
+    font-weight: 400;
+    font-size: 64px;
+    color: #2a220b;
+}
+/*Esse código define a aparência do elemento h2 com a classe conteudo-principal-escrito-subtitulo. Mais especificamente, 
+ele define a fonte ('Concert One', cursive), o peso da fonte (400), o tamanho da fonte (24px) e a cor do texto (rgb(255, 255, 255)
+que é branco).
+
+A propriedade font-family define a fonte que será usada no texto. Nesse caso, está sendo usado uma fonte personalizada chamada 
+Concert One, que é uma fonte cursiva. A propriedade font-weight define a espessura da fonte. Um valor de 400 significa que é 
+uma fonte de peso normal. A propriedade font-size define o tamanho da fonte. Um valor de 24px significa que o tamanho do texto 
+será de 24 pixels. E a propriedade color define a cor do texto. Nesse caso, o texto será branco.*/
+.conteudo-principal-escrito-subtitulo {
+    font-family: 'Concert One', cursive;
+    font-weight: 400;
+    font-size: 24px;
+    color: #2a220b;
+}
+/*Abaixo Define o estilo para o botão "Oba, quero!" na seção principal da página. 
+O estilo inclui a cor de fundo, tamanho, sombra, borda e fonte.*/
+.conteudo-principal-escrito-botao {
+    background-color: #e98400;
+    width: 180px;
+    height: 60px;
+    border: none;
+    box-shadow: 4px 5px 4px rgb(255, 192, 121);
+    border-radius: 20px;
+    font-family: 'Concert One', cursive;
+    font-weight: 400;
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+/*define a estilização do botão "conteudo-principal-escrito-botao" quando o cursor é passado sobre ele, 
+fazendo a mudança de cor do background para um tom mais claro.*/
+.conteudo-principal-escrito-botao:hover {
+    background-color:rgb(255, 192, 121)
+}
+/*define as dimensões da imagem "conteudo-principal-imagem" que está presente na seção "conteudo-principal".*/
+.conteudo-principal-imagem {
+    width: 30vw;
+    height: 430px;
+}
+/*define o layout da seção "conteudo-secundario", utilizando o conceito de flexbox para alinhar os elementos no centro e adicionar um 
+espaçamento de 24px entre eles. A propriedade "margin-top" define uma margem superior de 48px para a seção.*/
+.conteudo-secundario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-top: 48px;
+}
+/*Define o estilo para a seção secundária da página. O estilo inclui a exibição de flex, o alinhamento de itens, 
+o espaçamento entre elementos e a margem superior.*/
+.conteudo-secundario-titulo {
+    border-top: 0.4px solid sandybrown;
+    padding-top: 48px;
+    font-family: 'Concert One', cursive;
+    font-weight: 400;
+    font-size: 24px;
+    color: #2a220b;
+}
+/*Define o estilo para os parágrafos na seção secundária da página. O estilo inclui a fonte, o peso, o tamanho e a cor.*/
+.conteudo-secundario-paragrafo {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #2a220b;
+
+}
+/*Define o estilo para o rodapé da página. O estilo inclui o preenchimento e a borda superior.*/
+.rodape {
+    padding: 32px;
+    border-top: 0.4px solid sandybrown;
+}
+/*Define o estilo para a imagem no rodapé da página. O estilo inclui a altura, exibição e margem.*/
+.rodape-imagem {
+    width: 900px;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+}
+/*Define o estilo para todas as imagens na página. O estilo inclui a largura, altura e borda circular.*/
+img {
+    width: 300px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+/*Define o estilo para a imagem de login na página. O estilo inclui a largura e altura.*/
+.right-login-image {
+    width: 100vw;
+    height: 400px;
+}
+
+iframe {
+    width: 60vw;
+    height: 40vw;
+    border-radius: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: center;
+    background-color: black;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px black;
+    padding: 1px;
+    margin-left: 20%;
+    
+}
+.video{
+    align-items: center;
+    position: center;
+    justify-content: center;
+    height: 43vw;
+    background-image: url(img/background-beneficios.jpg);
+    margin-top: 0%;
+    padding: 2% 2%;
+}

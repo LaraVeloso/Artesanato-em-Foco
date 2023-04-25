@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- abaixo segue o "conector" do html para a página criada no estilo CSS, sem isso não haveria edição dos modelos da page.-->
+    <link rel="stylesheet" href="style2.css">
+    <title>Artesanato Em Foco</title>
+</head>
+<body>
+    <!-- Foi criado duas DIV'S pois do lado esquerdo se concentra o titulo com a imagem
+    e no lado direito se concentra o formulário com o "Card" das coisas que necessita para fazer o login
+    e elas são englobadas por uma div maior que é a "DIV MAIN"-->
+    <div class="main-login">
+        <div class="left-Login">
+            <h1>Faça o login<br>E fique por dentro do microempreendedorismo!</h1>
+            <img src="micro.svg"  class="left-login-image" alt="microempreendedorismo">
+            <!-- Abaixo eu criei uma área de neve para decorar a page, eu criei uma div com a classe snow_wrap
+            que serve como um container para o efeito e o div com a classe snow demonstra as particulas de neves.
+            (OBS: Este tipo de efeito podem ser pesados para varios dispositivos móveis, computadores ANTIGOS) -->
+            <div class="snow_wrap">
+                <div class="snow"></div>
+            </div>
+    </div>
+
+    <!-- Nota-se que o INPUT do usuário e o INPUT da senha está dentro da CARD, que engloba o titulo, input e afins.
+    Então antes de criar os nossos inputs criamos a div do CARD-->
+    <form action="paginaprincipal.html" method="get">
+        <div class="right-login">
+            <div class="card-login">
+                <!-- Para organizar melhor para que o usuario fique em cima do INPUT criei uma div para englobar tanto a label
+                quanto o input, então criei a classe textfield, e temos o placeholder que é o nome "usuario dentro do input"-->
+                <h1>LOGIN</h1>
+                <div class="textfield">
+                <label for="usuario">Usuário</label>
+                <input type="text" id="email" name="usuario" placeholder="Usuário" autocomplete="off" required>
+            </div>
+            <!-- Repeti o mesmo processo acima aqui em baixo. 
+            (Um ponto interessante, a senha tem que ser programada para não aparecer um "texto" logo coloquei a type
+            "password" para que ele fique em forma de "bolinha" não identificavel")-->
+            <div class="textfield">
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" name="senha" placeholder="Senha" autocomplete="off" required>
+        </div>
+        <!-- Após todas essas etapas, criei o button para ter um botão de login onde possui uma href para enviar o usuário ao
+        link de destino programado, isto é, site principal. -->
+        <button type="submit" class="btn-login">login</button>
+    </form>
+    <p>Ainda não tem uma conta?<a href="#">Criar conta!</a></p>
+     </div>
+ </div>
+</div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(68.15deg, #cc8038 16.62%, #987037 85.61%);
+}
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 45px;
+    background: #1d1d2e;
+    width: 500px;
+    box-shadow: rgba(251, 167, 12, 0.4) 5px 5px, rgba(224, 58, 20, 0.3) 10px 10px, rgba(173, 74, 4, 0.2) 15px 15px, rgba(252, 13, 13, 0.1) 20px 20px, rgba(255, 146, 58, 0.05) 25px 25px;
+}
+section h2 {
+    color: #cc8038;
+    font-size: 2.5rem;
+    margin: 2rem;
+}
+section form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+form label {
+    color: #cc8038;
+    font-size: 17px;
+    margin-bottom: 4px;   
+}
+form input {
+    padding: 15px;
+    outline: none;
+    border: 0;
+    margin-bottom: 20px;
+    font-size: 15px;
+    transition: all 0.5s;
+}
+form input:focus{
+    border-radius: 16px;
+}
+form textarea{
+    padding: 10px;
+    outline: none;
+    border: 0;
+    font-size: 15px;
+    margin-bottom: 30px;
+    transition: all 0.5s;
+}
+form textarea:focus{
+    border-radius: 16px;    
+}
+form button {
+    padding: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    background: transparent;
+    border: 2px solid #cc8038;
+    color: #cc8038;
+    transition: all 1s;
+    margin-bottom: 20px;
+}
+form button:hover{
+    background: #cc8038;
+    color: #101026;
+    border-radius: 16px;
+}
+
+/*Pagina do obrigado*/
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #cc8038;
+    flex-direction: column;
+}
+.text{
+    font-size: 45px;
+    color: floralwhite;
+    margin-bottom: 30px;
+}
+.paragrafo{
+    color: black;
+    margin-bottom: 50px;
+}
+.btn{
+    padding: 15px 55px;
+    background: floralwhite;
+    text-decoration: none;
+    color: salmon;
+    font-size: 18px;
+    transition: all 0.5s;
+}
+.btn:hover{
+    border-radius: 16px;
+}

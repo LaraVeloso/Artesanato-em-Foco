@@ -1,0 +1,315 @@
+/* Abaixo segue a importação de uma fonte para utilizar dentro da página */
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+
+/* IMPORTANTE: Após fazer o site via HTML puro, e inspecionar vai notar que existirá umas bordas laranjas, que é uma margem
+criada por padrão de 8 pixels tanto no eixo y quanto no eixo x do próprio HTML, etão criei essa tag BODY arrumando essa margem
+e abaixo coloquei a fonte importada da url acima que é a "Concert One" */
+body {
+    
+    margin: 0;
+    font-family: 'Concert One', cursive;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+
+/* Vou chamar a class utilizando . (ponto) e digitando a mesma class que está no HTML
+criei um width de 100vw (vw pois é a porcentagem da largura da viewport digamos que tem 1k de pixels se você colocar 1vh,
+vai ser relacionado a 1% do tamanho da largura da sua viewport, ou seja se ela tem 1k de pixels com 1% tem 10 pixels.)
+o height invés de vw (viewport width), utiliza-se o vh (viewport height). Após isso fiz o background do site geral.
+Para organizar os conteudos dentro da div, utilizei o display, ele pode ser block, line-flex, grid e afins, mas utilizei o flex
+pois faz com que as coisas fiquem lado a lado. Utilizei o justify-content center para deixar o eixo x centralizado, e usei o 
+align-items para o eixo y ficar centralizado*/
+.main-login{
+    width: 100vw;
+    height: 100vh;
+    background-color: blanchedalmond;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Fiz todo do procedimento também no left-login, como falei, o display flex organiza lado a lado, porém a minha imagem eu queria
+que ficasse me baixo do titulo, então usei o flex-direction "column" para deixar ele alinhado em colunas, ou seja, ocasionalmente
+vai ficar um em baixo do oturo */
+.left-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+/* Chamei o h1 da mesma class, onde alterei o tamanho da fonte e a cor. */
+.left-login > h1 {
+    font-size: 3vw;
+    color: aquamarine;
+
+}
+/* Aqui já é a  */
+.left-login-image{
+    width: 35vw;
+
+}
+/* Chamei os mesmos atributos do left-login sem a column pois não é necessário */
+.right-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Chamei a class card-login, notamos que diferente das outras, utilizei % no width, pois ele pega o tamanho da div que está no 
+CARD LOGIN, e ela está na div right-login que tem 50vh, ou seja, ele pega 60% desses 50vh e pega como tamanho.
+o padding adiciona um preenchimento meio que um espaço interno de 30 pixels na parte superior e inferior, enquanto a 35 nas laterais.
+background para ter uma cor de fundo do card.
+border-radius que faz arrendondar os cantos desta div no raio de 20 pixels definido.
+box-shadow adiciona uma sombra (meu favorito) - obrigado Lara Kaline pela aula no laboratório outro dia
+ */
+.card-login{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: cornsilk;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px coral;
+}
+/* Adicionei a cor ao Card do login do h1.
+font-weight para definir a espessura da fonte como 800 que chega a ser mais pesada e mais espessa.
+margin definir como 0 para remover as margens dos lados, tanto do superior, inferior, laterais. */
+.card-login > h1 {
+    color: goldenrod;
+    font-weight: 800;
+    margin: 0;
+
+}
+/* Aqui ja chamei o textfield, definindo o widht, display, flex, align como acima.
+margin ja definir com uma margem de 10 pixels na parte superior e inferior, mas nada nas laterais. */
+.textfield {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+/* Aqui já chamei o input.
+definir o background e color
+font-size para 12
+box-shadow para ter a sombra ao redor do campo de entrada do texto
+o outline remove as bordas de destaque ao redor do campo de entrada do texto.
+e o box-sizing define a largura do campo de entrada, com a "border-box" a largura inclui a borda e o preenchimento do elemento. */
+.textfield > input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: wheat;
+    color: #8b4513;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px wheat;
+    outline: none;
+    box-sizing: border-box;
+}
+/**/
+.textfield > label {
+    color: black;
+    margin-bottom: 10px;
+}
+/* aqui já chamando a placeholder, nota-se que precisei utilizar 2 pontos, padrão do CSS,
+em resumo, será aplicado apenas no texto de espaço reservado. */
+.textfield > input::placeholder{
+    color: #8b4513;
+}
+/* Utilizei alguns elementos dos algortimos acima.
+utilizei o border none para remover a borda do botão
+border-radius com 8 pixels para definir o raio do canto da borda.
+o outline none para remover o contorno do botão
+text-transform para definir o texto em tudo MAIUSCULO.
+letter-spacing 2 pixels para definir o espaçamento entre caracteres
+cursos pointer para aparecer o cursor do mouse clicável.  */
+.btn-login {
+    width: 60%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    background-color: salmon;
+    color: whitesmoke;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px red;
+}
+
+p{
+    color: black;
+    
+}
+/* Aqui já é uma "ancora" que define todos os estilos "a"
+color para definir como branco os caracteres
+o text-decoration none para remover os sublinhados padrão dos links, que é aquela barrinha azul em baixo. */
+a{
+    color:rgb(12, 206, 254);
+    text-decoration: none;
+    margin-left: 10px;
+}
+/* Aqui eu definir a animação da página em estilo "neve". Ele define um conjunto de elementos que terão a propriedade position definida 
+como absolute, de forma que eles possam ser posicionados independentemente do restante do conteúdo da página. A propriedade content é 
+definida como uma string vazia, o que é necessário para o  funcionamento correto do seletor ::before e ::after. 
+
+As propriedades top, left, right e bottom são definidas com valores negativos para que os elementos fiquem acima do topo da página, 
+e o fundo da página possa ser visto através dos elementos de neve.
+
+As propriedades background-image e background-size são definidas para que as imagens de neve apareçam na página, e a propriedade 
+animation é usada para aplicar uma animação chamada snowAnim aos elementos, que faz com que eles caiam suavemente como neve.
+
+A propriedade pointer-events é definida como none para que os elementos não sejam clicáveis.
+
+
+OBS: O interessante da produção dessas neves é que não tava sendo possivel digitar na barra de login nem da senha,
+depois de horas, descobrir um comando que é justo o pointer-events: none para indicar que esses elementos não deve responder
+a eventos do mouse, permitindo que outros elementos da página fiquem acessiveis por cima deles. */
+.snow,.snow::after,.snow::before{
+    content: "";
+    position: absolute;
+    top: -650px;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    background-image:
+    radial-gradient(4px 4px at 100px 50px, #fff, transparent),
+    radial-gradient(6px 6px at 200px 150px, #fff, transparent),
+    radial-gradient(3px 3px at 300px 250px, #fff, transparent),
+    radial-gradient(4px 4px at 400px 350px, #fff, transparent),
+    radial-gradient(6px 6px at 500px 100px, #fff, transparent),
+    radial-gradient(3px 3px at 50px 200px, #fff, transparent),
+    radial-gradient(4px 4px at 150px 300px, #fff, transparent),
+    radial-gradient(6px 6px at 250px 400px, #fff, transparent),
+    radial-gradient(3px 3px at 350px 500px, #fff, transparent);
+    background-size: 650px 650px;
+
+    animation: snowAnim 3s linear;
+    animation-iteration-count: infinite;
+    pointer-events: none;
+}
+/*abaixo, FOI UMA DOR DE CABEÇA, criei um body overflow para ocultar a barra de rolagem, pois o codigo de nevar
+eu coloquei para animação interativa infinita, e ele vai ficar descendo, e descendo infinitamente, criando um espaço em branco
+em baixo e aparecendo até a rolagem do mouse, após isso, coloquei o .snow_warp height 100vh para a neve
+ocupar toda a tela sem qualquer espaço em branco.**/
+body {
+    overflow: hidden;
+}
+
+.snow_wrap {
+    height: 100vh;
+    
+}
+/* Abaixo, este trecho de código cria um pseudo-elemento ::after para o seletor .snow, que é responsável por aplicar um efeito de desfoque à imagem de neve.
+A propriedade margin-left é usada para posicionar o elemento à esquerda, e as propriedades opacity e filter são usadas para tornar o 
+elemento um pouco mais transparente e aplicar o efeito de desfoque. 
+
+A propriedade animation-direction é definida como reverse para que a animação seja executada em direção contrária, e a propriedade 
+animation-duration é definida como 6s para que a animação dure seis segundos.*/
+.snow:after{
+    margin-left: -250px;
+    opacity: 0.5;
+    filter: blur(2px);
+    animation-direction: reverse;
+    animation-duration: 6s;
+}
+/* Abaixo, o código se refere a um seletor de classe .snow e ao seu pseudo-elemento ::before.
+
+O margin-left: -350px; define a margem esquerda do elemento antes do conteúdo, ou seja, o ::before, como -350px em relação ao 
+seu elemento pai, movendo-o para a esquerda.
+
+O opacity: 0.7; define a opacidade do elemento como 0,7, tornando-o parcialmente transparente.
+
+O filter: blur(1px); aplica um efeito de desfoque com 1 pixel no elemento antes do conteúdo.
+
+O animation-direction: reverse; define a direção da animação como reversa, fazendo com que ela seja reproduzida de trás para frente.
+
+O animation-duration: 9s; define a duração da animação como 9 segundos. */
+.snow:before{
+    margin-left: -350px;
+    opacity: 0.7;
+    filter: blur(1px);
+    animation-direction: reverse;
+    animation-duration: 9s;
+}
+
+.snow_wrap {
+    height: 0;
+  }
+/* Abaixo segue a definição da animação para o elemento com a classe .snow. No caso, define uma transição de transform: 
+translateY(0) para transform: translateY(650px). 
+
+from{ transform: translateY(0); }: Define o estado inicial da animação, ou seja, o elemento começa na posição original.
+
+to{ transform: translateY(650px); }: Define o estado final da animação, ou seja, o elemento é deslocado para baixo em 650 pixels.*/
+@keyframes snowAnim{
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(650px);
+}
+}
+/* Abaixo, o @media only screen and (max-width: 950px): Define uma regra de mídia 
+que se aplica somente a dispositivos com largura máxima de 950 pixels. 
+
+.card-login{ width: 85%; }: Reduz a largura do elemento com a classe .card-login para 85%.*/
+@media only screen and (max-width: 950px){
+    .card-login{
+        width: 85%;
+    }
+}
+
+/* Abaixo, o @media only screen and (max-width: 600px): Define uma regra de mídia que 
+se aplica somente a dispositivos com largura máxima de 600 pixels.
+
+.main-login{ flex-direction: column; }: Define a orientação da direção flexível do elemento com a classe 
+.main-login para coluna, ou seja, os elementos filhos serão empilhados verticalmente.
+
+já o .left-login > h1{ display: none; }: Oculta o elemento h1 dentro do elemento com a classe .left-login.*/
+@media only screen and (max-width: 600px){
+    .main-login{
+    flex-direction: column-reverse;
+   }
+   .left-login > h1{
+    display: none;
+    
+   }
+   /* .left-login{ width: 100%; height: auto; }: Define a largura do elemento com a classe 
+   .left-login para 100% e a altura para automática. */
+   .left-login{
+   width: 100%;
+   height: auto;
+}
+/* .right-login{ width: 100%; height: auto; }: Define a largura do elemento com a classe 
+.right-login para 100% e a altura para automática. */
+   .right-login{
+    width: 100%;
+    height: auto;
+}
+/* .left-login-image{ width: 50vh; }: Define a largura do elemento com a classe 
+.left-login-image para 50% da altura da tela do dispositivo.  */
+   .left-login-image{
+    width: 50vh;
+}
+/* .card-login{ width: 90%; }: Reduz a largura do elemento com a classe .card-login para 90%. */
+    .card-login{
+    width: 90%;
+
+}
+
+}

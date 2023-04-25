@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="pt-bt">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Checkout</title>
+  </head>
+  <body>
+    <div class="container">
+        <div class="py-5 text-center">
+            <img src="src/logo.svg" width="470vw" height="200vw">
+            <h2>Quase lá!</h2>
+            <p class="lead">Informe seus dados para finalizar sua assinatura</p>
+        </div>
+    </div>
+    <div class="container d-flex justify-content-center mt-5 mb-5">
+
+            
+
+        <div class="row g-3">
+
+          <div class="col-md-6">  
+            
+            <span>Método de pagamento</span>
+            <div class="card">
+
+              <div class="accordion" id="accordionExample">
+                
+                <div class="card">
+                  <div class="card-header p-0" id="headingTwo">
+                    <h2 class="mb-0">
+                      <button class="btn btn-light btn-block text-left collapsed p-3 rounded-0 border-bottom-custom" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <div class="d-flex align-items-center justify-content-between">
+
+                          <span>Paypal</span>
+                          <img src="src/PAYPAL.png" width="30">
+                          
+                        </div>
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                      <input type="text" class="form-control" placeholder="Digite seu email">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-header p-0">
+                    <h2 class="mb-0">
+                      <button class="btn btn-light btn-block text-left p-3 rounded-0" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <div class="d-flex align-items-center justify-content-between">
+
+                          <span>Cartão de crédito</span>
+                          <div class="icons">
+                            <img src="src/MASTER.png" width="30">
+                            <img src="src/VISA.png" width="30">
+                          </div>
+                          
+                        </div>
+                      </button>
+                    </h2>
+                  </div>
+
+                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body payment-card-body">
+                      
+                      <span class="font-weight-normal card-text">Número do cartão</span>
+                      <div class="input">
+
+                        <i class="fa fa-credit-card"></i>
+                        <input type="text" class="form-control" placeholder="0000 0000 0000 0000">
+                        
+                      </div> 
+
+                      <div class="row mt-3 mb-3">
+
+                        <div class="col-md-6">
+
+                          <span class="font-weight-normal card-text">Data de validade</span>
+                          <div class="input">
+
+                            <i class="fa fa-calendar"></i>
+                            <input type="text" class="form-control" placeholder="MM/AA">
+                            
+                          </div> 
+                          
+                        </div>
+
+
+                        <div class="col-md-6">
+
+                          <span class="font-weight-normal card-text">Código de segurança</span>
+                          <div class="input">
+
+                            <i class="fa fa-lock"></i>
+                            <input type="text" class="form-control" placeholder="000">
+                            
+                          </div> 
+                          
+                        </div>
+                        
+
+                      </div>
+
+                      <span class="text-muted certificate-text"><i class="fa fa-lock"></i> Sua transação é criptografada e protegida por SSL</span>
+                     
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+              
+            </div>
+
+          </div>
+          <!--Área esquerda com resumo de compra-->
+          <div class="col-md-6">
+              <span>Resumo da compra</span>
+
+              <div class="card">
+
+                <div class="d-flex justify-content-between p-3">
+
+                  <div class="d-flex flex-column">
+
+                    <span>Assinatura <i class="fa fa-caret-down"></i></span>
+                    <a href="#" class="billing">Você economiza 20% quando comparado à atacado</a>
+                    
+                  </div>
+
+                  <div class="mt-1">
+                    <sup class="super-price">R$99.99</sup>
+                    <span class="super-month">/Mês</span>
+                  </div>
+                  
+                </div>
+
+                  
+
+                </div>
+
+                <hr class="mt-0 line">
+
+
+                <div class="p-3 d-flex justify-content-between">
+
+                  <div class="d-flex flex-column">
+
+                    <span>Hoje você pagará</span>
+                    <small>Após 30 dias R$99.99</small>
+                    
+                  </div>
+                  <span>R$89.90</span>
+
+                  
+
+                </div>
+
+
+                <div class="p-3">
+                <div class="botao">   
+                    <a href="Página de obrigado.html"><button class="btn btn-dark btn-block free-button">Finalizar compra</button></a>
+                </div>
+               <div class="text-center">
+                 <a href="paginaprincipal.html">Retornar à página inicial</a>
+               </div>
+                  
+                </div>
+
+
+
+                
+              </div>
+          </div>
+          
+        </div>
+        
+
+      </div>
+    
+    
+  </body>
+</html>
