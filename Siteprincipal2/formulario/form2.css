@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Concert One', cursive;
 
 }
 body {
@@ -11,7 +13,45 @@ body {
     justify-content: center;
     min-height: 100vh;
     background: linear-gradient(68.15deg, #cc8038 16.62%, #987037 85.61%);
+    overflow: hidden;
 }
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.bolhas {
+    position: absolute;
+    display: flex;
+
+}
+.bolhas spam {
+    width: 30px;
+    height: 30px;
+    background: orange;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #e5ff0044,
+    0 0 50px #ff9900,
+    0 0 100px #ff9900;
+    animation: animar calc(30s / var(--i)) linear infinite;
+}
+
+@keyframes animar {
+    0% {
+        transform: translateY(100vh) scale(0);
+    }
+    100% {
+        transform: translateY(-100vh) scale(1);
+    }
+}
+
+.bolhas spam:nth-of-type(even) {
+    background: #2dc3ff;
+}
+    
 section {
     display: flex;
     align-items: center;
@@ -84,11 +124,14 @@ form button:hover{
     min-height: 100vh;
     background: #cc8038;
     flex-direction: column;
+    text-align: center;
 }
 .text{
     font-size: 45px;
     color: floralwhite;
     margin-bottom: 30px;
+    margin: 17% 30% 4%;
+    
 }
 .paragrafo{
     color: black;

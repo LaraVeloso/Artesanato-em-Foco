@@ -26,6 +26,16 @@ header img{
     border: 5px solid sandybrown;
 }
 
+.btn{
+    position: absolute;
+    padding: 20px 15px 19px;
+    
+    text-decoration: none;
+    color: rgb(37, 37, 37);
+    font-size: 25px;
+    transition: all 0.5s;
+    margin: 2% 15%;
+}
 .center{
     text-align: center;
 }
@@ -55,12 +65,12 @@ footer{
 }
 
 footer a{
-    margin: 20px;
+    margin: 10% 90px 5%;
     text-align: center;
 }
 
 footer p{
-    margin-top: 2px;
+    margin-top: 35px;
 }
 
 .container{

@@ -48,7 +48,6 @@ vai ficar um em baixo do oturo */
 .left-login > h1 {
     font-size: 3vw;
     color: aquamarine;
-
 }
 /* Aqui já é a  */
 .left-login-image{
@@ -86,8 +85,9 @@ font-weight para definir a espessura da fonte como 800 que chega a ser mais pesa
 margin definir como 0 para remover as margens dos lados, tanto do superior, inferior, laterais. */
 .card-login > h1 {
     color: goldenrod;
-    font-weight: 800;
-    margin: 0;
+    font-weight: 300;
+    margin: 0% 20% 0%;
+    font-size: 0%;
 
 }
 /* Aqui ja chamei o textfield, definindo o widht, display, flex, align como acima.
@@ -283,7 +283,7 @@ se aplica somente a dispositivos com largura máxima de 600 pixels.
 já o .left-login > h1{ display: none; }: Oculta o elemento h1 dentro do elemento com a classe .left-login.*/
 @media only screen and (max-width: 600px){
     .main-login{
-    flex-direction: column-reverse;
+    flex-direction: column;
    }
    .left-login > h1{
     display: none;
@@ -304,7 +304,9 @@ já o .left-login > h1{ display: none; }: Oculta o elemento h1 dentro do element
 /* .left-login-image{ width: 50vh; }: Define a largura do elemento com a classe 
 .left-login-image para 50% da altura da tela do dispositivo.  */
    .left-login-image{
-    width: 50vh;
+    width: 30vw;
+    margin: 0% 35%;
+    display: block;
 }
 /* .card-login{ width: 90%; }: Reduz a largura do elemento com a classe .card-login para 90%. */
     .card-login{
