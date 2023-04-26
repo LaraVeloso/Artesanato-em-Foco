@@ -99,7 +99,7 @@ form textarea{
 form textarea:focus{
     border-radius: 16px;    
 }
-form button {
+button {
     padding: 15px;
     cursor: pointer;
     font-size: 16px;
@@ -109,7 +109,7 @@ form button {
     transition: all 1s;
     margin-bottom: 20px;
 }
-form button:hover{
+button:hover{
     background: #cc8038;
     color: #101026;
     border-radius: 16px;
